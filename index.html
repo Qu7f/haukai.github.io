@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--website title-->
+    <title>The Haukai Restaurant</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-control" content="public, max-age=3600, must-revalidate">
+    <!--google web fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Epilogue|Sora" rel="stylesheet">
+    <!--user.css-->
+    <link href="css/user.css" rel="stylesheet" type="text/css">
+    <!--outsource (fontawesome)link to use copyright free icon image-->
+    <script src="https://kit.fontawesome.com/3019ca2183.js" crossorigin="anonymous"></script>
+    <!--main.js to active togglebutton when resize-->
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <!--top navigation bar-->
+    <nav class="navbar">
+        <div class="navbar_head">
+            <a href="">The Haukai Restaurant</a>
+        </div>
+        <ul class="navbar_menu">
+            <li><a href="">HOME</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#reservations">RESERVATIONS</a></li>
+            <li><a href="#hours">HOURS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+
+        <a class="navbar_togglebutton">
+            <i class="fas fa-bars"></i>
+        </a>
+    </nav>
+
+    <!-- image banner with text box section -->
+    <section class="container main_image">
+        <div class="text_box text_center">
+            <p>Your local restaurant </br> inspired by Māori kai.</p>
+        </div>
+    </section>
+    
+    <!-- menu section -->
+    <section class="container" id="menu">
+        <div class="order text_center">
+            <h2>MENU</h2>
+            <p>We love questions and feedback - and we're always happy to help!<br>
+                Here are some ways to contact us.</p>
+            <div class="row">
+                <div class="col_50">
+                    <img class="image_two_column" src='./image/food.jpg' alt='Fail to load food image.'/>
+                    <h3>Foods</h3>
+                </div>
+                <div class="col_50">
+                    <img class="image_two_column" src='./image/beverage.jpg' alt='Fail to load beverage image.'/>
+                    <h3>beverages</h3>
+                </div>
+            </div>
+            <div class="row">
+                <!-- more photo button -->
+                <a href="./image/menu.pdf" target="_blank" style="text-decoration:none;"><button class="block">Click for more menu information</button></a>
+            </div>
+        </div>
+    </section>   
+
+    <!-- reservations section -->
+    <section class="container grey_back" id="reservations">
+        <div class="order text_center">
+            <h2>RESERVATIONS</h2>
+            <p>For larger parties, please call us on 09 401 4019 or leave us a message using our online form available at our
+                </br><a href="#contact" style="color: black;">Contact </a>us page.</p>
+        </div>
+        <div class="form_container">
+            <form action="reservations.php">
+                <div class="row">
+                  <div class="col_25">
+                    <label for="reservation_name">Name</label>
+                  </div>
+                  <div class="col_75">
+                    <input type="text" id="reservation_name" name="reservation_name" placeholder="Your name.." required>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col_25">
+                      <label for="reservation_contact">Contact</label>
+                    </div>
+                    <div class="col_75">
+                      <input type="text" id="reservation_contact" name="reservation_contact" placeholder="Your email address or phone number.." required>
+                    </div>
+                  </div>
+                <div class="row">
+                  <div class="col_25">
+                    <label for="reservation_date">Date</label>
+                  </div>
+                  <div class="col_75">
+                    <input type='date' id="reservation_date" name="reservation_date" required>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col_25">
+                      <label for="reservation_time">Time</label>
+                    </div>
+                    <div class="col_75">
+                      <input type='time' id="reservation_time" name="reservation_time" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col_25">
+                      <label for="reservation_guestnumber">No. of guests</label>
+                    </div>
+                    <div class="col_75">
+                      <input type="number" id="reservation_guestnumber" name="reservation_guestnumber" placeholder="1" min="1" required>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col_25">
+                    <label for="reservation_note">Note</label>
+                  </div>
+                  <div class="col_75">
+                    <textarea id="reservation_note" name="reservation_note" placeholder="Tell us anything else that might be important.." style="height:200px"></textarea>
+                  </div>
+                </div>
+                <div class="row text_center">
+                  <input type="submit" value="Submit">
+                </div>
+            </form>        
+        </div>
+    </section>
+
+    <!-- hours section -->
+    <section class="container" id="hours">
+        <div class="row order text_center">
+            <h2>OPENING HOURS</h2>
+            <p>Wednesday to Sunday from 4:30pm to 9:30pm 
+                <br>Kitchen close at 9:00pm.</p>
+        </div>
+        <div class="row order text_center">
+            <h3>2022 January</h3>
+            <table>
+                <tr>
+                    <td>Mon</td>
+                    <td>Tue</td>
+                    <td>Wed</td>
+                    <td>Thu</td>
+                    <td>Fri</td>
+                    <td>Sat</td>
+                    <td>Sun</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="holiday">1</td>
+                    <td class="holiday">2</td>
+                </tr>
+                <tr>
+                    <td class="holiday">3</td>
+                    <td class="holiday">4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td class="holiday">10</td>
+                    <td class="holiday">11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td class="holiday">17</td>
+                    <td class="holiday">18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td class="holiday">24</td>
+                    <td class="holiday">25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td class="holiday">31</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="container grey_back" id="contact">
+        <div class="row order text_center">
+            <h2>CONTACT</h2>
+            <p>We love questions and feedback - and we're always happy to help!
+                <br>Here are some ways to contact us.</p>
+        </div>
+        <div class="row order text_center">
+            <h3>LOCATION</h3>
+            <p>1 Island Street, Kerikeri, Bay of Islands</p>
+        </div>
+        <div>
+            <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=3%20Cleary%20Street%20Lower%20Hutt%205011%20New%20Zealand+(Simone%20and%20Peter's%20Queenscliffe%20House)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        </div>
+        <div class="row order text_center">
+            <h3>PHONE</h3>
+            <p>09 401 4019</p>
+        </div>
+        <div class="row order text_center">
+            <h3>LEAVE A MESSAGE</h3>
+            <p>You can also leave a message by filling below form</p>
+        </div>
+        <div class="form_container">
+            <form action="message.php">
+                <div class="row">
+                  <div class="col_25">
+                    <label for="message_name">Name</label>
+                  </div>
+                  <div class="col_75">
+                    <input type="text" id="message_name" name="message_name" placeholder="Your name.." required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col_25">
+                    <label for="message_contact">Contact</label>
+                  </div>
+                  <div class="col_75">
+                    <input type="text" id="message_contact" name="message_contact" placeholder="Your email address or phone number.." required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col_25">
+                    <label for="message_enquiry">Enuqiry</label>
+                  </div>
+                  <div class="col_75">
+                    <textarea id="message_enquiry" name="message_enquiry" placeholder="Your enquiry.." style="height:200px"></textarea>
+                  </div>
+                </div>
+                <div class="row text_center">
+                  <input type="submit" value="Submit">
+                </div>
+            </form>        
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <p>Copyright © 2022 The Haukai Restaurant.</p>          
+        <ul class="footer_menu">
+            <li><a href="privacy.html">PRIVACY STATEMENT</a></li>
+            <li><a href="#">STAFF LOGIN</a></li>
+        </ul>
+    </footer>    
+    
+</body>
