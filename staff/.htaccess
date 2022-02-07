@@ -1,0 +1,4 @@
+AuthType Basic 
+AuthName "Protected Page - Staff Only" 
+AuthUserFile ../.htpasswd 
+require valid-user
